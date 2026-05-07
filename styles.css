@@ -130,7 +130,7 @@ a {
 }
 
 .hero {
-  min-height: calc(100vh - 72px);
+  min-height: clamp(520px, 68vh, 700px);
   display: grid;
   grid-template-columns: minmax(0, 0.9fr) minmax(320px, 1.1fr);
   align-items: stretch;
@@ -140,10 +140,10 @@ a {
 
 .hero-media {
   position: relative;
-  min-height: 420px;
+  min-height: 360px;
   display: grid;
   place-items: center;
-  padding: clamp(2rem, 6vw, 5rem);
+  padding: clamp(1.5rem, 4vw, 3.5rem);
   background:
     linear-gradient(rgba(22, 32, 29, 0.06) 1px, transparent 1px),
     linear-gradient(90deg, rgba(22, 32, 29, 0.06) 1px, transparent 1px),
@@ -161,7 +161,7 @@ a {
 }
 
 .hero-media img {
-  width: min(92%, 690px);
+  width: min(84%, 580px);
   aspect-ratio: 1;
   position: relative;
   z-index: 1;
@@ -188,7 +188,7 @@ a {
 .hero-content {
   width: min(690px, 100%);
   align-self: center;
-  padding: clamp(3.5rem, 8vw, 8rem) clamp(1.25rem, 7vw, 6rem);
+  padding: clamp(2.5rem, 5vw, 5rem) clamp(1.25rem, 6vw, 5rem);
 }
 
 .eyebrow,
@@ -210,8 +210,8 @@ p {
 
 h1 {
   max-width: 12ch;
-  margin-bottom: 1.35rem;
-  font-size: clamp(3.5rem, 8vw, 7.2rem);
+  margin-bottom: 1rem;
+  font-size: clamp(3.2rem, 6.8vw, 6.2rem);
   line-height: 0.9;
   letter-spacing: 0;
 }
@@ -239,7 +239,7 @@ h3 {
   display: flex;
   flex-wrap: wrap;
   gap: 0.8rem;
-  margin-top: 2rem;
+  margin-top: 1.4rem;
 }
 
 .button {
