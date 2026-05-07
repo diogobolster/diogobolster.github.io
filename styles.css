@@ -278,13 +278,14 @@ h3 {
 }
 
 .intro-section {
+  padding: clamp(2rem, 4vw, 3.75rem) 0 clamp(3rem, 5vw, 4.5rem);
   background: var(--surface);
 }
 
 .intro-feature {
   width: min(1560px, calc(100% - 2rem));
   display: grid;
-  gap: clamp(1.25rem, 3vw, 2.5rem);
+  gap: clamp(1rem, 2vw, 1.6rem);
 }
 
 .intro-title {
