@@ -753,6 +753,45 @@ h3 {
   background: #eef2ed;
 }
 
+.teaching-section {
+  background: var(--surface);
+}
+
+.teaching-inner {
+  width: min(1460px, calc(100% - 2rem));
+}
+
+.teaching-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.teaching-card {
+  min-height: 320px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 1.25rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: #fbfaf6;
+  box-shadow: 0 12px 36px rgba(22, 32, 29, 0.06);
+}
+
+.teaching-card h2 {
+  margin-bottom: 1rem;
+  font-size: clamp(1.65rem, 2.2vw, 2.35rem);
+}
+
+.teaching-card p:not(.section-kicker) {
+  color: var(--muted);
+}
+
+.teaching-card .button {
+  margin-top: auto;
+}
+
 .publication-list {
   display: grid;
   gap: 0.75rem;
@@ -852,6 +891,10 @@ h3 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  .teaching-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .about-grid {
     grid-template-columns: minmax(240px, 0.85fr) minmax(260px, 1fr);
   }
@@ -925,6 +968,7 @@ h3 {
   .about-grid,
   .member-layout,
   .project-grid,
+  .teaching-grid,
   .publication-hero-grid {
     grid-template-columns: 1fr;
   }
