@@ -314,8 +314,7 @@ h3 {
 }
 
 .intro-copy {
-  width: min(1120px, 100%);
-  margin: 0 auto;
+  width: 100%;
 }
 
 .intro-copy h2 {
@@ -323,7 +322,7 @@ h3 {
 }
 
 .intro-copy p {
-  max-width: 880px;
+  max-width: none;
   color: var(--muted);
   font-size: 1.08rem;
 }
