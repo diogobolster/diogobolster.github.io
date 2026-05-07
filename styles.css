@@ -758,34 +758,45 @@ h3 {
 }
 
 .teaching-inner {
-  width: min(1460px, calc(100% - 2rem));
+  width: min(1560px, calc(100% - 2rem));
 }
 
 .teaching-grid {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 1rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: clamp(1rem, 2vw, 1.5rem);
 }
 
 .teaching-card {
-  min-height: 320px;
+  min-height: 560px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 1.25rem;
+  padding: 1.35rem;
   border: 1px solid var(--line);
   border-radius: var(--radius);
   background: #fbfaf6;
   box-shadow: 0 12px 36px rgba(22, 32, 29, 0.06);
 }
 
+.teaching-card img {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  margin-bottom: 1.25rem;
+  object-fit: cover;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+}
+
 .teaching-card h2 {
   margin-bottom: 1rem;
-  font-size: clamp(1.65rem, 2.2vw, 2.35rem);
+  font-size: clamp(2rem, 3vw, 3.2rem);
+  line-height: 0.98;
 }
 
 .teaching-card p:not(.section-kicker) {
   color: var(--muted);
+  font-size: 1.08rem;
 }
 
 .teaching-card .button {
