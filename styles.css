@@ -803,6 +803,77 @@ h3 {
   margin-top: auto;
 }
 
+.course-materials-section {
+  background: #eef2ed;
+}
+
+.course-materials-inner {
+  width: min(1460px, calc(100% - 2rem));
+  display: grid;
+  gap: 1rem;
+}
+
+.course-material-block {
+  padding: 1.25rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--surface);
+}
+
+.course-material-heading {
+  max-width: 920px;
+  margin-bottom: 1rem;
+}
+
+.course-material-heading h2 {
+  font-size: clamp(1.8rem, 3vw, 3rem);
+}
+
+.resource-grid,
+.resource-list {
+  display: grid;
+  gap: 0.65rem;
+}
+
+.resource-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.resource-grid.compact {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.resource-columns {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.resource-columns h3 {
+  margin-bottom: 0.75rem;
+}
+
+.resource-grid a,
+.resource-list a {
+  min-height: 52px;
+  display: flex;
+  align-items: center;
+  padding: 0.75rem 0.85rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: #fbfaf6;
+  color: var(--navy);
+  font-weight: 800;
+}
+
+.resource-grid a:hover,
+.resource-grid a:focus-visible,
+.resource-list a:hover,
+.resource-list a:focus-visible {
+  border-color: var(--gold);
+  transform: translateY(-1px);
+}
+
 .publication-list {
   display: grid;
   gap: 0.75rem;
@@ -976,6 +1047,9 @@ h3 {
   .member-layout,
   .project-grid,
   .teaching-grid,
+  .resource-grid,
+  .resource-grid.compact,
+  .resource-columns,
   .publication-hero-grid {
     grid-template-columns: 1fr;
   }
