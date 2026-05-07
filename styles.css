@@ -463,10 +463,14 @@ h3 {
   background: var(--surface);
 }
 
+.group-members-inner {
+  width: min(1460px, calc(100% - 2rem));
+}
+
 .member-layout {
   display: grid;
-  grid-template-columns: minmax(0, 1.2fr) minmax(300px, 0.8fr);
-  gap: 1rem;
+  grid-template-columns: minmax(0, 1.35fr) minmax(380px, 0.85fr);
+  gap: clamp(1rem, 2vw, 1.5rem);
 }
 
 .member-panel {
