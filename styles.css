@@ -604,20 +604,24 @@ h3 {
   border-block: 1px solid var(--line);
 }
 
-.about-heading {
+.about-grid {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(180px, 0.42fr);
-  gap: 1.25rem;
+  grid-template-columns: minmax(240px, 0.75fr) minmax(260px, 0.9fr) minmax(0, 1.25fr);
+  gap: clamp(1.5rem, 4vw, 4rem);
   align-items: start;
 }
 
-.about-heading img {
+.about-photo img {
   width: 100%;
   aspect-ratio: 1;
   object-fit: cover;
   border: 10px solid var(--surface);
   border-radius: 50%;
   box-shadow: var(--shadow);
+}
+
+.about-heading h2 {
+  max-width: none;
 }
 
 .stats {
@@ -888,7 +892,7 @@ h3 {
   .intro-feature,
   .split-grid,
   .contact-grid,
-  .about-heading,
+  .about-grid,
   .member-layout,
   .project-grid,
   .publication-hero-grid {
