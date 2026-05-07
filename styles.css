@@ -414,6 +414,7 @@ h3 {
 }
 
 .group-section {
+  padding-top: clamp(2rem, 3.5vw, 3.5rem);
   background: var(--surface);
 }
 
