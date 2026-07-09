@@ -897,6 +897,29 @@ h3 {
   border-radius: var(--radius);
 }
 
+.publication-year {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin: 1.75rem 0 0.35rem;
+  color: var(--red);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(1.9rem, 4vw, 3.2rem);
+  font-weight: 900;
+  line-height: 1;
+}
+
+.publication-year:first-child {
+  margin-top: 0;
+}
+
+.publication-year::after {
+  content: "";
+  flex: 1;
+  height: 2px;
+  background: linear-gradient(90deg, var(--red), rgba(122, 154, 133, 0.15));
+}
+
 .publication-number {
   color: var(--clay);
   font-weight: 900;
